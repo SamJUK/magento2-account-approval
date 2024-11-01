@@ -98,7 +98,7 @@ class LoginPost
                     if (!empty($customer->getCustomAttributes())) {
                         if ($this->isAccountNotApproved($customer)) {
                             $this->messageManager->addErrorMessage(__('Your account is not approved.
-                            Kindly contact website admin for assitance.'));
+                            Kindly contact website admin for assistance.'));
 
                             return $this->resultRedirectFactory->create()
                                     ->setPath('customer/account/login');

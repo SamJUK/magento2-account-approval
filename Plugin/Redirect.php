@@ -84,7 +84,7 @@ class Redirect
 
             // Adding a custom message
             $this->messageManager->addErrorMessage(__('Your account is not approved.
-            Kindly contact website admin for assitance.'));
+            Kindly contact website admin for assistance.'));
 
             // Destroy the customer session in order to redirect him to the login page
             $this->session->destroy();
