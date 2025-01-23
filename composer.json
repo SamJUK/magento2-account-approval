@@ -2,7 +2,7 @@
   "name": "amitshree/magento2-customer-account-approval",
   "description": "N/A",
   "require": {
-    "php": ">=7.0"
+    "php": ">=7.2"
   },
   "type": "magento2-module",
   "license": [

@@ -97,8 +97,7 @@ class LoginPost
                 try {
                     if (!empty($customer->getCustomAttributes())) {
                         if ($this->isAccountNotApproved($customer)) {
-                            $this->messageManager->addErrorMessage(__('Your account is not approved.
-                            Kindly contact website admin for assistance.'));
+                            $this->messageManager->addErrorMessage(__('Your account is currently awaiting approval.'));
 
                             return $this->resultRedirectFactory->create()
                                     ->setPath('customer/account/login');
@@ -111,7 +110,7 @@ class LoginPost
                         return $proceed();
                     }
                 } catch (\Exception $e) {
-                    $message = "Invalid User credentials.";
+                    $message = "Invalid credentials.";
                     $this->messageManager->addError($message);
                     $this->session->setUsername($login['username']);
                     return $this->resultRedirectFactory->create()
