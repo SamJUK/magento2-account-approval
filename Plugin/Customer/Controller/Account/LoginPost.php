@@ -130,7 +130,7 @@ class LoginPost
     /**
      * Get customer by email
      * @param string $email
-     * @return \Magento\Customer\Api\Data\CustomerInterface
+     * @return \Magento\Customer\Api\Data\CustomerInterface|bool
      */
     public function getCustomer($email)
     {

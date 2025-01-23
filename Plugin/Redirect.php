@@ -42,6 +42,11 @@ class Redirect
     protected $resultFactory;
 
     /**
+     * @var ScopeConfigInterface
+     */
+    protected $scopeConfig;
+
+    /**
      * @param Registry $registry
      * @param UrlInterface $url
      * @param ManagerInterface $messageManager

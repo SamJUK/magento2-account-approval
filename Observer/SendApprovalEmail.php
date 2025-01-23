@@ -55,7 +55,7 @@ class SendApprovalEmail implements ObserverInterface
 
             // do not send mail if customer is new created from backoffice
             if (!isset($customerOld)) {
-                return $this;
+                return;
             }
 
             $approveAccount = (int)$customer->getCustomAttribute('approve_account')->getValue();
@@ -89,7 +89,5 @@ class SendApprovalEmail implements ObserverInterface
         } catch (\Exception $e) {
             $this->logger->error('Error while sending customer approval email ' . $e->getMessage());
         }
-
-        return $this;
     }
 }

@@ -43,8 +43,8 @@ class CustomerYesNoOptions extends \Magento\Eav\Model\Entity\Attribute\Source\Ab
         $_options = [];
         foreach ($this->getAllOptions() as $option) {
             $_options[$option['value']] = $option['label'];
-            return $_options;
         }
+        return $_options;
     }
 
     /**
