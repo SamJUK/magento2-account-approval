@@ -2,5 +2,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="customer_register_success">
         <observer name="checkcustomer" instance="Amitshree\Customer\Observer\CheckCustomer" />
+        <observer name="amitshree_customer_register_success" instance="Amitshree\Customer\Observer\SendAdminNotification"/>
     </event>
 </config>
