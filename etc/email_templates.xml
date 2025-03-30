@@ -2,4 +2,5 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
     <template id="amitshree_customer_account_approved" label="Amitshree - Customer account approval" file="account_approval.html" type="html" module="Amitshree_Customer" area="frontend"/>
+    <template id="amitshree_customer_new_registration" label="Amitshree - Customer new registration" file="new_registration.html" type="html" module="Amitshree_Customer" area="frontend"/>
 </config>

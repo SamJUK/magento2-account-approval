@@ -4,6 +4,7 @@
         <customerlogin>
             <general>
                 <enable>0</enable>
+                <registration_notifications_enabled>0</registration_notifications_enabled>
             </general>
         </customerlogin>
     </default>
