@@ -77,7 +77,7 @@ class SendApprovalEmail implements ObserverInterface
 
                 $transport = $this->transportBuilder
                 ->setTemplateIdentifier('amitshree_customer_account_approved')
-                ->setTemplateOptions(['area' => \Magento\Framework\App\Area::AREA_ADMINHTML,
+                ->setTemplateOptions(['area' => \Magento\Framework\App\Area::AREA_FRONTEND,
                     'store' => \Magento\Store\Model\Store::DEFAULT_STORE_ID])
                 ->setTemplateVars(['data' => $postObject])
                 ->setFrom(['name' => $name, 'email' => $email])
